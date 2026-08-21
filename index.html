@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DNA LAB — O Código da Vida</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     CABEÇALHO
+===================================================== -->
+
+<header class="topo">
+
+    <div class="logo">
+
+        <span class="logo-dna">🧬</span>
+
+        <span>DNA LAB</span>
+
+    </div>
+
+    <div class="ano">
+
+        TRABALHO DE CIÊNCIAS - BIOLOGIA
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     INÍCIO
+===================================================== -->
+
+<main id="inicio">
+
+    <section class="hero">
+
+        <div class="texto-principal">
+
+            <p class="mini-titulo">
+                LABORATÓRIO VIRTUAL DE BIOLOGIA
+            </p>
+
+            <h1>
+
+                Descubra o
+
+                <span>
+                    código da vida.
+                </span>
+
+            </h1>
+
+            <p class="descricao">
+
+                Entre em uma jornada pelo mundo do DNA.
+                Descubra como essa molécula armazena
+                informações genéticas, como ela funciona,
+                como é transmitida entre gerações e como
+                a ciência utiliza esse conhecimento.
+
+            </p>
+
+            <div class="hero-info">
+
+                <span>🧬 16 aulas sobre DNA</span>
+
+                <span>🔬 Laboratório</span>
+
+                <span>🌎 Exploração</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="dna-container">
+
+            <div class="dna-brilho"></div>
+
+            <img
+                src="dna.jpg"
+                alt="Molécula de DNA"
+                class="dna-imagem"
+            >
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         MENU PRINCIPAL
+    ================================================= -->
+
+    <section class="opcoes">
+
+        <button
+            class="cartao"
+            onclick="abrirPagina('dna')"
+        >
+
+            <span class="numero">
+                01
+            </span>
+
+            <div class="icone">
+                🧬
+            </div>
+
+            <h2>
+                Conhecer o DNA
+            </h2>
+
+            <p>
+
+                Comece pelo básico e avance até conceitos
+                mais complexos. Aprenda sobre nucleotídeos,
+                bases nitrogenadas, genes, cromossomos,
+                genoma, replicação, mutações e muito mais.
+
+            </p>
+
+            <span class="cartao-link">
+                Começar apresentação →
+            </span>
+
+        </button>
+
+
+
+        <button
+            class="cartao"
+            onclick="abrirPagina('laboratorio')"
+        >
+
+            <span class="numero">
+                02
+            </span>
+
+            <div class="icone">
+                🔬
+            </div>
+
+            <h2>
+                Laboratório
+            </h2>
+
+            <p>
+
+                Descubra como o DNA pode ser estudado
+                na prática através de experiências simples
+                e técnicas utilizadas pela ciência.
+
+            </p>
+
+            <span class="cartao-link">
+                Entrar no laboratório →
+            </span>
+
+        </button>
+
+
+
+        <button
+            class="cartao"
+            onclick="abrirPagina('explorar')"
+        >
+
+            <span class="numero">
+                03
+            </span>
+
+            <div class="icone">
+                🌎
+            </div>
+
+            <h2>
+                Explorar
+            </h2>
+
+            <p>
+
+                Vá além do básico. Descubra a relação entre
+                DNA, RNA, genética, medicina, biotecnologia,
+                testes genéticos e o Projeto Genoma Humano.
+
+            </p>
+
+            <span class="cartao-link">
+                Explorar ciência →
+            </span>
+
+        </button>
+
+    </section>
+
+
+
+    <button
+        class="fontes"
+        onclick="mostrarFontes()"
+    >
+
+        📚 Fontes científicas
+
+    </button>
+
+</main>
+
+
+
+<!-- =====================================================
+     CONHECER O DNA
+===================================================== -->
+
+<main
+    id="pagina-dna"
+    class="pagina"
+>
+
+    <button
+        class="voltar"
+        onclick="voltarInicio()"
+    >
+
+        ← Voltar para o início
+
+    </button>
+
+
+    <section class="cabecalho-pagina">
+
+        <div class="icone-grande">
+            🧬
+        </div>
+
+        <p class="mini-titulo">
+            PARTE 01
+        </p>
+
+        <h2>
+            Conhecer o DNA
+        </h2>
+
+        <p>
+
+            Uma apresentação completa para entender
+            a molécula que armazena grande parte das
+            informações genéticas dos seres vivos.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- PROGRESSO -->
+
+    <div class="progresso-container">
+
+        <div class="progresso-texto">
+
+            <span id="etapa-atual">
+                Etapa 1 de 16
+            </span>
+
+            <span id="porcentagem">
+                6%
+            </span>
+
+        </div>
+
+        <div class="barra">
+
+            <div
+                id="barra-progresso"
+                class="barra-preenchida"
+            ></div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         ETAPAS DO DNA
+    ================================================= -->
+
+    <section id="conteudo-dna">
+
+
+
+        <!-- 01 -->
+
+        <article
+            class="etapa-dna ativa"
+            data-etapa="1"
+        >
+
+            <span class="numero-etapa">
+                01 / 16
+            </span>
+
+            <h3>
+                O que é DNA?
+            </h3>
+
+            <p class="introducao">
+
+                O DNA é uma molécula que armazena informações
+                genéticas e participa do funcionamento,
+                desenvolvimento e reprodução dos organismos.
+
+            </p>
+
+            <div class="texto-detalhado">
+
+                <p>
+
+                    A sigla DNA vem do inglês
+                    <strong>deoxyribonucleic acid</strong>.
+                    Em português, chamamos de
+                    <strong>ácido desoxirribonucleico</strong>.
+
+                </p>
+
+                <p>
+
+                    O DNA pode ser imaginado como um enorme
+                    sistema de armazenamento de informações
+                    biológicas. Essas informações são registradas
+                    utilizando principalmente quatro bases
+                    nitrogenadas: adenina, timina, citosina
+                    e guanina.
+
+                </p>
+
+                <p>
+
+                    O DNA está presente em praticamente todos
+                    os seres vivos. Bactérias, plantas, animais,
+                    fungos e muitos outros organismos possuem
+                    material genético.
+
+                </p>
+
+                <div class="destaque">
+
+                    🧬 <strong>Ideia principal:</strong>
+
+                    o DNA funciona como uma grande biblioteca
+                    molecular de informações genéticas.
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 02 -->
+
+        <article
+            class="etapa-dna"
+            data-etapa="2"
+        >
+
+            <span class="numero-etapa">
+                02 / 16
+            </span>
+
+            <h3>
+                Onde está o DNA?
+            </h3>
+
+            <p class="introducao">
+
+                Nas células eucarióticas, como as células
+                humanas, a maior parte do DNA está localizada
+                no núcleo.
+
+            </p>
+
+            <div class="texto-detalhado">
+
+                <p>
+
+                    O núcleo celular funciona como uma espécie
+                    de compartimento que organiza e protege
+                    grande parte do material genético.
+
+                </p>
+
+                <p>
+
+                    Entretanto, as células humanas também
+                    possuem pequenas quantidades de DNA
+                    dentro das <strong>mitocôndrias</strong>.
+
+                </p>
+
+                <p>
+
+                    As bactérias não possuem núcleo delimitado
+                    por uma membrana. Nelas, o DNA fica em uma
+                    região chamada <strong>nucleoide</strong>.
+
+                </p>
+
+                <div class="diagrama">
+
+                    <div>
+                        🧫
+                        <strong>Célula</strong>
+                    </div>
+
+                    <span>↓</span>
+
+                    <div>
+                        🔵
+                        <strong>Núcleo</strong>
+                        <small>DNA nuclear</small>
+                    </div>
+
+                    <span>+</span>
+
+                    <div>
+                        ⚡
+                        <strong>Mitocôndria</strong>
+                        <small>DNA mitocondrial</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 03 -->
+
+        <article
+            class="etapa-dna"
+            data-etapa="3"
+        >
+
+            <span class="numero-etapa">
+                03 / 16
+            </span>
+
+            <h3>
+                Para que serve o DNA?
+            </h3>
+
+            <p class="introducao">
+
+                O DNA possui funções fundamentais para
+                a manutenção e continuidade da vida.
+
+            </p>
+
+            <div class="texto-detalhado">
+
+                <p>
+
+                    Uma das principais funções do DNA é
+                    <strong>armazenar informações genéticas</strong>.
+                    Essas informações participam da produção
+                    de moléculas e da realização de processos
+                    celulares.
+
+                </p>
+
+                <p>
+
+                    Outra função importante é permitir que
+                    a informação genética seja copiada.
+                    Isso é essencial quando uma célula
+                    precisa se dividir.
+
+                </p>
+
+                <p>
+
+                    O DNA também participa da
+                    <strong>hereditariedade</strong>,
+                    permitindo que informações genéticas
+                    sejam transmitidas entre gerações.
+
+                </p>
+
+                <div class="cards-funcao">
+
+                    <div>
+                        💾
+                        <strong>Armazenar</strong>
+                        <span>informações genéticas</span>
+                    </div>
+
+                    <div>
+                        🔄
+                        <strong>Copiar</strong>
+                        <span>informações genéticas</span>
+                    </div>
+
+                    <div>
+                        👨‍👩‍👧
+                        <strong>Transmitir</strong>
+                        <span>informações entre gerações</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 04 -->
+
+        <article
+            class="etapa-dna"
+            data-etapa="4"
+        >
+
+            <span class="numero-etapa">
+                04 / 16
+            </span>
+
+            <h3>
+                Como o DNA armazena informações?
+            </h3>
+
+            <p class="introducao">
+
+                A informação genética está relacionada
+                à sequência das bases nitrogenadas.
+
+            </p>
+
+            <div class="texto-detalhado">
+
+                <p>
+
+                    O DNA possui quatro bases nitrogenadas:
+                    <strong>adenina (A), timina (T),
+                    citosina (C) e guanina (G)</strong>.
+
+                </p>
+
+                <p>
+
+                    É possível imaginar essas bases como
+                    quatro símbolos que podem formar
+                    sequências muito longas.
+
+                </p>
+
+                <p>
+
+                    A ordem dessas bases é extremamente
+                    importante. Alterações na sequência
+                    podem modificar a informação genética.
+
+                </p>
+
+                <div class="sequencia">
+
+                    A T G C C A T G A C G T A C
+
+                </div>
+
+                <p>
+
+                    A informação genética é complexa e envolve
+                    genes, RNAs, proteínas e diversos processos
+                    celulares.
+
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 05 -->
+
+        <article
+            class="etapa-dna"
+            data-etapa="5"
+        >
+
+            <span class="numero-etapa">
+                05 / 16
+            </span>
+
+            <h3>
+                A estrutura da dupla hélice
+            </h3>
+
+            <p class="introducao">
+
+                Uma das características mais conhecidas
+                do DNA é sua estrutura em forma de
+                dupla hélice.
+
+            </p>
+
+            <div class="texto-detalhado">
+
+                <p>
+
+                    O DNA é formado por duas longas cadeias
+                    de nucleotídeos. Essas cadeias ficam
+                    associadas através das interações entre
+                    suas bases nitrogenadas.
+
+                </p>
+
+                <p>
+
+                    As duas cadeias se enrolam formando
+                    uma estrutura tridimensional semelhante
+                    a uma escada torcida.
+
+                </p>
+
+                <p>
+
+                    As laterais são formadas por açúcar e
+                    fosfato. Os "degraus" são formados
+                    pelos pares de bases.
+
+                </p>
+
+                <div class="dna-mini">
+
+                    <img
+                        src="dna.jpg"
+                        alt="Dupla hélice do DNA"
+                    >
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 06 -->
+
+        <article
+            class="etapa-dna"
+            data-etapa="6"
+        >
+
+            <span class="numero-etapa">
+                06 / 16
+            </span>
+
+            <h3>
+                O que são nucleotídeos?
+            </h3>
+
+            <p class="introducao">
+
+                Nucleotídeos são as unidades que formam
+                as longas cadeias do DNA.
+
+            </p>
+
+            <div class="texto-detalhado">
+
+                <p>
+
+                    Podemos imaginar os nucleotídeos como
+                    pequenas peças que se conectam para
+                    formar uma estrutura muito maior.
+
+                </p>
+
+                <p>
+                    Cada nucleotídeo do DNA possui três
+                    componentes principais:
+                </p>
+
+                <div class="componentes">
+
+                    <div>
+                        🧪
+                        <strong>Grupo fosfato</strong>
+                        <span>Participa da estrutura da cadeia.</span>
+                    </div>
+
+                    <div>
+                        🍬
+                        <strong>Desoxirribose</strong>
+                        <span>É o açúcar presente no DNA.</span>
+                    </div>
+
+                    <div>
+                        🧬
+                        <strong>Base nitrogenada</strong>
+                        <span>Pode ser A, T, C ou G.</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 07 -->
+
+        <article
+            class="etapa-dna"
+            data-etapa="7"
+        >
+
+            <span class="numero-etapa">
+                07 / 16
+            </span>
+
+            <h3>
+                As quatro bases nitrogenadas
+            </h3>
+
+            <p class="introducao">
+
+                O DNA utiliza quatro bases nitrogenadas
+                principais.
+
+            </p>
+
+            <div class="bases">
+
+                <div>
+                    <strong>A</strong>
+                    <span>Adenina</span>
+                </div>
+
+                <div>
+                    <strong>T</strong>
+                    <span>Timina</span>
+                </div>
+
+                <div>
+                    <strong>C</strong>
+                    <span>Citosina</span>
+                </div>
+
+                <div>
+                    <strong>G</strong>
+                    <span>Guanina</span>
+                </div>
+
+            </div>
+
+            <div class="texto-detalhado">
+
+                <p>
+
+                    Embora existam apenas quatro tipos
+                    principais de bases no DNA, elas podem
+                    formar sequências extremamente longas.
+
+                </p>
+
+                <p>
+
+                    A enorme quantidade de combinações
+                    possíveis permite armazenar uma quantidade
+                    gigantesca de informação genética.
+
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 08 -->
+
+        <article
+            class="etapa-dna"
+            data-etapa="8"
+        >
+
+            <span class="numero-etapa">
+                08 / 16
+            </span>
+
+            <h3>
+                Pareamento das bases
+            </h3>
+
+            <p class="introducao">
+
+                As bases nitrogenadas seguem uma regra
+                de complementaridade.
+
+            </p>
+
+            <div class="pareamento">
+
+                <div>
+                    <strong>A</strong>
+                    <span>↔</span>
+                    <strong>T</strong>
+                </div>
+
+                <div>
+                    <strong>C</strong>
+                    <span>↔</span>
+                    <strong>G</strong>
+                </div>
+
+            </div>
+
+            <div class="texto-detalhado">
+
+                <p>
+
+                    A adenina se associa à timina,
+                    enquanto a citosina se associa
+                    à guanina.
+
+                </p>
+
+                <p>
+
+                    Essa complementaridade é essencial
+                    para a estrutura do DNA e também
+                    é fundamental durante a replicação.
+
+                </p>
+
+                <div class="destaque">
+
+                    💡 Conhecendo a sequência de uma
+                    fita, podemos descobrir a sequência
+                    complementar.
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 09 -->
+
+        <article
+            class="etapa-dna"
+            data-etapa="9"
+        >
+
+            <span class="numero-etapa">
+                09 / 16
+            </span>
+
+            <h3>
+                O que são genes?
+            </h3>
+
+            <p class="introducao">
+
+                Genes são segmentos de DNA que possuem
+                informações funcionais.
+
+            </p>
+
+            <div class="texto-detalhado">
+
+                <p>
+
+                    Um gene pode conter informações utilizadas
+                    pela célula para produzir uma proteína
+                    ou um RNA funcional.
+
+                </p>
+
+                <p>
+
+                    As proteínas realizam inúmeras funções.
+                    Algumas atuam como enzimas, outras
+                    participam da estrutura das células,
+                    transportam substâncias ou ajudam
+                    na comunicação celular.
+
+                </p>
+
+                <div class="fluxo">
+
+                    <span>DNA</span>
+                    <b>→</b>
+                    <span>Gene</span>
+                    <b>→</b>
+                    <span>RNA</span>
+                    <b>→</b>
+                    <span>Proteína</span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 10 -->
+
+        <article
+            class="etapa-dna"
+            data-etapa="10"
+        >
+
+            <span class="numero-etapa">
+                10 / 16
+            </span>
+
+            <h3>
+                Cromossomos
+            </h3>
+
+            <p class="introducao">
+
+                Cromossomos são estruturas organizadas
+                que contêm DNA associado a proteínas.
+
+            </p>
+
+            <div class="texto-detalhado">
+
+                <p>
+
+                    O DNA de uma célula humana é extremamente
+                    longo. Para caber no núcleo, ele precisa
+                    ser organizado e compactado.
+
+                </p>
+
+                <p>
+
+                    O DNA se associa a proteínas chamadas
+                    <strong>histonas</strong>. Essa organização
+                    forma a cromatina.
+
+                </p>
+
+                <p>
+
+                    Durante determinados momentos da divisão
+                    celular, o material genético fica ainda
+                    mais condensado, formando cromossomos
+                    visíveis ao microscópio.
+
+                </p>
+
+                <div class="cromossomo">
+
+                    🧬 DNA
+
+                    +
+
+                    proteínas
+
+                    =
+
+                    <strong>cromossomo</strong>
+
+                </div>
+
+                <p>
+
+                    Nas células somáticas humanas normalmente
+                    encontramos 46 cromossomos organizados
+                    em 23 pares.
+
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 11 -->
+
+        <article
+            class="etapa-dna"
+            data-etapa="11"
+        >
+
+            <span class="numero-etapa">
+                11 / 16
+            </span>
+
+            <h3>
+                O que é genoma?
+            </h3>
+
+            <p class="introducao">
+
+                Genoma é o conjunto completo do material
+                genético de um organismo.
+
+            </p>
+
+            <div class="texto-detalhado">
+
+                <p>
+
+                    Quando falamos em genoma humano,
+                    estamos falando do conjunto do material
+                    genético humano.
+
+                </p>
+
+                <p>
+
+                    O genoma contém uma enorme quantidade
+                    de informações distribuídas principalmente
+                    pelos cromossomos.
+
+                </p>
+
+                <div class="comparacao">
+
+                    <div>
+                        <strong>DNA</strong>
+                        <span>Molécula que armazena informação genética.</span>
+                    </div>
+
+                    <div>
+                        <strong>Gene</strong>
+                        <span>Segmento de DNA com informação funcional.</span>
+                    </div>
+
+                    <div>
+                        <strong>Cromossomo</strong>
+                        <span>DNA organizado com proteínas.</span>
+                    </div>
+
+                    <div>
+                        <strong>Genoma</strong>
+                        <span>Conjunto do material genético.</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 12 -->
+
+        <article
+            class="etapa-dna"
+            data-etapa="12"
+        >
+
+            <span class="numero-etapa">
+                12 / 16
+            </span>
+
+            <h3>
+                Como acontece a replicação?
+            </h3>
+
+            <p class="introducao">
+
+                Antes que uma célula se divida, seu DNA
+                precisa ser copiado.
+
+            </p>
+
+            <div class="texto-detalhado">
+
+                <p>
+
+                    Durante a replicação, as duas fitas
+                    do DNA se separam.
+
+                </p>
+
+                <p>
+
+                    Cada fita original serve como molde
+                    para a formação de uma nova fita.
+
+                    Os novos nucleotídeos são adicionados
+                    seguindo a regra de complementaridade.
+
+                </p>
+
+                <div class="replicacao">
+
+                    <div>
+                        🧬
+                        <strong>DNA original</strong>
+                    </div>
+
+                    <span>↓</span>
+
+                    <div>
+                        🔓
+                        <strong>Fitas separam</strong>
+                    </div>
+
+                    <span>↓</span>
+
+                    <div>
+                        🧩
+                        <strong>Novos nucleotídeos</strong>
+                    </div>
+
+                    <span>↓</span>
+
+                    <div>
+                        🧬 🧬
+                        <strong>Novas moléculas</strong>
+                    </div>
+
+                </div>
+
+                <p>
+
+                    A replicação é chamada de
+                    <strong>semiconservativa</strong>,
+                    porque cada nova molécula possui uma
+                    fita original e uma fita recém-formada.
+
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 13 -->
+
+        <article
+            class="etapa-dna"
+            data-etapa="13"
+        >
+
+            <span class="numero-etapa">
+                13 / 16
+            </span>
+
+            <h3>
+                DNA e produção de proteínas
+            </h3>
+
+            <p class="introducao">
+
+                A informação presente no DNA participa
+                das instruções utilizadas para produzir
+                proteínas.
+
+            </p>
+
+            <div class="texto-detalhado">
+
+                <p>
+
+                    O DNA não costuma ser utilizado diretamente
+                    para fabricar proteínas. Uma região do DNA
+                    pode primeiro ser transcrita para uma
+                    molécula de RNA mensageiro.
+
+                </p>
+
+                <p>
+
+                    Esse processo é chamado
+                    <strong>transcrição</strong>.
+
+                    Depois, o RNA mensageiro pode ser utilizado
+                    pelos ribossomos para orientar a montagem
+                    de uma proteína. Esse processo é chamado
+                    <strong>tradução</strong>.
+
+                </p>
+
+                <div class="fluxo">
+
+                    <span>DNA</span>
+                    <b>→</b>
+                    <span>Transcrição</span>
+                    <b>→</b>
+                    <span>RNA</span>
+                    <b>→</b>
+                    <span>Tradução</span>
+                    <b>→</b>
+                    <span>Proteína</span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 14 -->
+
+        <article
+            class="etapa-dna"
+            data-etapa="14"
+        >
+
+            <span class="numero-etapa">
+                14 / 16
+            </span>
+
+            <h3>
+                DNA e características
+            </h3>
+
+            <p class="introducao">
+
+                Os genes participam da formação das
+                características dos organismos, mas essa
+                relação é bastante complexa.
+
+            </p>
+
+            <div class="texto-detalhado">
+
+                <p>
+
+                    Algumas características possuem forte
+                    influência genética. Outras dependem
+                    da combinação de muitos genes e também
+                    de fatores ambientais.
+
+                </p>
+
+                <p>
+
+                    Por exemplo, características relacionadas
+                    ao crescimento podem depender de fatores
+                    genéticos, alimentação, condições de saúde
+                    e ambiente.
+
+                </p>
+
+                <p>
+
+                    Por isso, não devemos pensar que um único
+                    gene determina sozinho tudo sobre uma
+                    pessoa.
+
+                </p>
+
+                <div class="destaque">
+
+                    🧬 GENES
+
+                    +
+
+                    🌎 AMBIENTE
+
+                    =
+
+                    🧠 CARACTERÍSTICAS BIOLÓGICAS COMPLEXAS
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 15 -->
+
+        <article
+            class="etapa-dna"
+            data-etapa="15"
+        >
+
+            <span class="numero-etapa">
+                15 / 16
+            </span>
+
+            <h3>
+                DNA e hereditariedade
+            </h3>
+
+            <p class="introducao">
+
+                Hereditariedade é a transmissão de informações
+                genéticas de uma geração para outra.
+
+            </p>
+
+            <div class="texto-detalhado">
+
+                <p>
+
+                    Nas células somáticas humanas, normalmente
+                    existem 46 cromossomos, organizados em
+                    23 pares.
+
+                </p>
+
+                <p>
+
+                    Os gametas, como espermatozoides e óvulos,
+                    possuem 23 cromossomos.
+
+                    Na fecundação, os dois conjuntos se unem,
+                    formando uma célula com 46 cromossomos.
+
+                </p>
+
+                <div class="hereditariedade">
+
+                    👨 + 👩
+
+                    <br>
+
+                    ↓
+
+                    <br>
+
+                    🧬
+
+                    <strong>
+                        novo organismo
+                    </strong>
+
+                </div>
+
+                <p>
+
+                    Dessa maneira, os descendentes recebem
+                    material genético de seus progenitores.
+
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 16 -->
+
+        <article
+            class="etapa-dna"
+            data-etapa="16"
+        >
+
+            <span class="numero-etapa">
+                16 / 16
+            </span>
+
+            <h3>
+                Mutações
+            </h3>
+
+            <p class="introducao">
+
+                Mutações são alterações na sequência do
+                material genético.
+
+            </p>
+
+            <div class="texto-detalhado">
+
+                <p>
+
+                    Uma mutação pode acontecer quando ocorre
+                    uma alteração na sequência de bases do DNA.
+
+                    Existem diferentes tipos de mutações e
+                    seus efeitos dependem de onde e como
+                    a alteração ocorre.
+
+                </p>
+
+                <p>
+
+                    Algumas mutações não produzem efeitos
+                    perceptíveis. Outras podem modificar
+                    a função de um gene ou de uma proteína.
+
+                </p>
+
+                <p>
+
+                    Em determinadas situações, uma alteração
+                    genética pode estar relacionada a uma doença.
+                    Em outras, pode ser neutra ou até oferecer
+                    uma vantagem em determinado ambiente.
+
+                </p>
+
+                <div class="destaque">
+
+                    ⚠️ <strong>Importante:</strong>
+
+                    uma mutação não significa automaticamente
+                    que haverá uma doença.
+
+                </div>
+
+                <div class="final-dna">
+
+                    <div class="final-icone">
+                        🧬
+                    </div>
+
+                    <h4>
+                        Você chegou ao final!
+                    </h4>
+
+                    <p>
+
+                        Agora você já conhece os principais
+                        conceitos necessários para entender
+                        o DNA.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+
+    <div class="navegacao-etapas">
+
+        <button
+            id="botao-anterior"
+            onclick="etapaAnterior()"
+        >
+            ← Anterior
+        </button>
+
+        <button
+            id="botao-proximo"
+            onclick="proximaEtapa()"
+        >
+            Próximo →
+        </button>
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================================
+     LABORATÓRIO
+===================================================== -->
+
+<main
+    id="pagina-laboratorio"
+    class="pagina"
+>
+
+    <button
+        class="voltar"
+        onclick="voltarInicio()"
+    >
+        ← Voltar para o início
+    </button>
+
+    <section class="cabecalho-pagina">
+
+        <div class="icone-grande">
+            🔬
+        </div>
+
+        <p class="mini-titulo">
+            PARTE 02
+        </p>
+
+        <h2>
+            Laboratório
+        </h2>
+
+        <p>
+
+            Agora vamos sair da teoria e descobrir
+            como o DNA pode ser estudado na prática.
+
+        </p>
+
+    </section>
+
+
+    <section class="conteudo">
+
+
+
+        <article
+            class="bloco interativo"
+            onclick="abrirConteudo('lab1', 'laboratorio')"
+        >
+
+            <span class="numero-bloco">01</span>
+
+            <div class="bloco-icone">🍓</div>
+
+            <h3>
+                Extração de DNA do morango
+            </h3>
+
+            <p>
+                Veja como é possível observar material
+                genético de um morango utilizando materiais
+                simples.
+            </p>
+
+            <span class="ler-mais">
+                Ver experiência →
+            </span>
+
+        </article>
+
+
+
+        <article
+            class="bloco interativo"
+            onclick="abrirConteudo('lab2', 'laboratorio')"
+        >
+
+            <span class="numero-bloco">02</span>
+
+            <div class="bloco-icone">🧅</div>
+
+            <h3>
+                Extração de DNA da cebola
+            </h3>
+
+            <p>
+                Descubra como células vegetais podem
+                ser utilizadas para estudar material genético.
+            </p>
+
+            <span class="ler-mais">
+                Ver experiência →
+            </span>
+
+        </article>
+
+
+
+        <article
+            class="bloco interativo"
+            onclick="abrirConteudo('lab3', 'laboratorio')"
+        >
+
+            <span class="numero-bloco">03</span>
+
+            <div class="bloco-icone">🧪</div>
+
+            <h3>
+                A função do detergente
+            </h3>
+
+            <p>
+                Entenda por que o detergente é utilizado
+                na extração de DNA.
+            </p>
+
+            <span class="ler-mais">
+                Ver explicação →
+            </span>
+
+        </article>
+
+
+
+        <article
+            class="bloco interativo"
+            onclick="abrirConteudo('lab4', 'laboratorio')"
+        >
+
+            <span class="numero-bloco">04</span>
+
+            <div class="bloco-icone">🧂</div>
+
+            <h3>
+                A função do sal
+            </h3>
+
+            <p>
+                Descubra o papel do sal em protocolos
+                simples de extração de DNA.
+            </p>
+
+            <span class="ler-mais">
+                Ver explicação →
+            </span>
+
+        </article>
+
+
+
+        <article
+            class="bloco interativo"
+            onclick="abrirConteudo('lab5', 'laboratorio')"
+        >
+
+            <span class="numero-bloco">05</span>
+
+            <div class="bloco-icone">❄️</div>
+
+            <h3>
+                Álcool gelado
+            </h3>
+
+            <p>
+                Entenda por que o álcool ajuda a tornar
+                o DNA visível.
+            </p>
+
+            <span class="ler-mais">
+                Ver explicação →
+            </span>
+
+        </article>
+
+
+
+        <article
+            class="bloco interativo"
+            onclick="abrirConteudo('lab6', 'laboratorio')"
+        >
+
+            <span class="numero-bloco">06</span>
+
+            <div class="bloco-icone">🔬</div>
+
+            <h3>
+                DNA no laboratório científico
+            </h3>
+
+            <p>
+                Conheça técnicas utilizadas pelos
+                cientistas para estudar o DNA.
+            </p>
+
+            <span class="ler-mais">
+                Ver explicação →
+            </span>
+
+        </article>
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     EXPLORAR
+===================================================== -->
+
+<main
+    id="pagina-explorar"
+    class="pagina"
+>
+
+    <button
+        class="voltar"
+        onclick="voltarInicio()"
+    >
+        ← Voltar para o início
+    </button>
+
+    <section class="cabecalho-pagina">
+
+        <div class="icone-grande">
+            🌎
+        </div>
+
+        <p class="mini-titulo">
+            PARTE 03
+        </p>
+
+        <h2>
+            Explorar
+        </h2>
+
+        <p>
+
+            Vá além do conteúdo básico e descubra
+            como o conhecimento sobre DNA é utilizado
+            pela ciência e pela sociedade.
+
+        </p>
+
+    </section>
+
+
+    <section class="conteudo">
+
+
+
+        <article
+            class="bloco interativo"
+            onclick="abrirConteudo('exp1', 'explorar')"
+        >
+
+            <span class="numero-bloco">01</span>
+
+            <div class="bloco-icone">🧬</div>
+
+            <h3>
+                DNA × RNA
+            </h3>
+
+            <p>
+                Entenda as diferenças entre DNA e RNA,
+                suas estruturas e funções.
+            </p>
+
+            <span class="ler-mais">
+                Explorar →
+            </span>
+
+        </article>
+
+
+
+        <article
+            class="bloco interativo"
+            onclick="abrirConteudo('exp2', 'explorar')"
+        >
+
+            <span class="numero-bloco">02</span>
+
+            <div class="bloco-icone">🧪</div>
+
+            <h3>
+                Genética
+            </h3>
+
+            <p>
+                Conheça genes, alelos, características
+                e conceitos fundamentais da genética.
+            </p>
+
+            <span class="ler-mais">
+                Explorar →
+            </span>
+
+        </article>
+
+
+
+        <article
+            class="bloco interativo"
+            onclick="abrirConteudo('exp3', 'explorar')"
+        >
+
+            <span class="numero-bloco">03</span>
+
+            <div class="bloco-icone">👨‍👩‍👧</div>
+
+            <h3>
+                Hereditariedade
+            </h3>
+
+            <p>
+                Descubra como as informações genéticas
+                podem passar entre gerações.
+            </p>
+
+            <span class="ler-mais">
+                Explorar →
+            </span>
+
+        </article>
+
+
+
+        <article
+            class="bloco interativo"
+            onclick="abrirConteudo('exp4', 'explorar')"
+        >
+
+            <span class="numero-bloco">04</span>
+
+            <div class="bloco-icone">🧫</div>
+
+            <h3>
+                Biotecnologia
+            </h3>
+
+            <p>
+                Veja como o conhecimento sobre DNA
+                é utilizado para desenvolver tecnologias.
+            </p>
+
+            <span class="ler-mais">
+                Explorar →
+            </span>
+
+        </article>
+
+
+
+        <article
+            class="bloco interativo"
+            onclick="abrirConteudo('exp5', 'explorar')"
+        >
+
+            <span class="numero-bloco">05</span>
+
+            <div class="bloco-icone">💉</div>
+
+            <h3>
+                DNA e medicina
+            </h3>
+
+            <p>
+                Descubra aplicações da genética
+                na medicina moderna.
+            </p>
+
+            <span class="ler-mais">
+                Explorar →
+            </span>
+
+        </article>
+
+
+
+        <article
+            class="bloco interativo"
+            onclick="abrirConteudo('exp6', 'explorar')"
+        >
+
+            <span class="numero-bloco">06</span>
+
+            <div class="bloco-icone">🌎</div>
+
+            <h3>
+                Projeto Genoma Humano
+            </h3>
+
+            <p>
+                Conheça um dos projetos científicos
+                mais importantes da história da genética.
+            </p>
+
+            <span class="ler-mais">
+                Explorar →
+            </span>
+
+        </article>
+
+
+
+        <article
+            class="bloco interativo"
+            onclick="abrirConteudo('exp7', 'explorar')"
+        >
+
+            <span class="numero-bloco">07</span>
+
+            <div class="bloco-icone">🔍</div>
+
+            <h3>
+                Testes de DNA
+            </h3>
+
+            <p>
+                Entenda como análises genéticas podem
+                ser utilizadas em diferentes situações.
+            </p>
+
+            <span class="ler-mais">
+                Explorar →
+            </span>
+
+        </article>
+
+
+
+        <article
+            class="bloco interativo"
+            onclick="abrirConteudo('exp8', 'explorar')"
+        >
+
+            <span class="numero-bloco">08</span>
+
+            <div class="bloco-icone">🤯</div>
+
+            <h3>
+                Curiosidades sobre DNA
+            </h3>
+
+            <p>
+                Descubra fatos interessantes sobre
+                genética e material genético.
+            </p>
+
+            <span class="ler-mais">
+                Explorar →
+            </span>
+
+        </article>
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     LEITOR
+===================================================== -->
+
+<section
+    id="leitor-conteudo"
+    class="leitor"
+>
+
+    <button
+        class="voltar"
+        onclick="fecharConteudo()"
+    >
+
+        ← Voltar
+
+    </button>
+
+    <div
+        id="conteudo-escolhido"
+        class="conteudo-escolhido"
+    ></div>
+
+</section>
+
+
+
+<!-- =====================================================
+     RODAPÉ
+===================================================== -->
+
+<footer>
+
+    <span>
+        🧬 DNA LAB
+    </span>
+
+    <span>
+        9º ano - Prof. Inês
+    </span>
+
+    <span>
+        2026
+    </span>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
