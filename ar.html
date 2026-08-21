@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>DNA AR</title>
+
+
+    <!-- A-FRAME -->
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+
+
+    <!-- MINDAR -->
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+
+</head>
+
+
+<body style="margin: 0; overflow: hidden;">
+
+
+    <a-scene
+
+        mindar-image="
+            imageTargetSrc: ./ar/targets.mind;
+            maxTrackables: 1;
+        "
+
+        embedded
+
+        color-space="sRGB"
+
+        renderer="
+            colorManagement: true;
+            physicallyCorrectLights;
+        "
+
+        vr-mode-ui="enabled: false"
+
+        device-orientation-permission-ui="enabled: false"
+    >
+
+
+        <!-- =========================
+             CÂMERA
+        ========================== -->
+
+        <a-camera
+            position="0 0 0"
+            look-controls="enabled: false"
+        >
+        </a-camera>
+
+
+        <!-- =========================
+             IMAGEM-ALVO
+        ========================== -->
+
+        <a-entity
+            mindar-image-target="targetIndex: 0"
+        >
+
+
+            <!-- CUBO DE TESTE -->
+
+            <a-box
+
+                position="0 0 0"
+
+                rotation="0 0 0"
+
+                scale="0.5 0.5 0.5"
+
+                color="#00ff88"
+            >
+
+            </a-box>
+
+
+        </a-entity>
+
+
+    </a-scene>
+
+
+</body>
+
+</html>
